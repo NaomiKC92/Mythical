@@ -1,5 +1,15 @@
 class Unicorn {
-  constructor() {
+  constructor(name, color, spark) {
+    this.name = name;
+    this.color = color || 'white';
+  }
+  isWhite() {
+    if (this.color !== 'white') {
+      return false;
+    };
+    }
+    says(sparkly) {
+      return `**;* ${sparkly} *;**`
   }
 }
 
