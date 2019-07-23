@@ -38,7 +38,7 @@ describe('Ogre', () => {
     assert.equal(human.encounterCounter, 1);
   });
 
-  it.skip('humans should only notice an ogre every third encounter', () => {
+  it('humans should only notice an ogre every third encounter', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
@@ -50,7 +50,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it.skip('human notices ogre on the sixth encounter', () => {
+  it('human notices ogre on the sixth encounter', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
@@ -69,7 +69,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it.skip('can swing a club', () => {
+  it('can swing a club', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
@@ -78,7 +78,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('ogre swings the club when a human notices it', () => {
+  it('ogre swings the club when a human notices it', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
@@ -92,7 +92,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('ogre hits human every second time it swings', () => {
+  it('ogre hits human every second time it swings', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
@@ -108,7 +108,7 @@ describe('Ogre', () => {
     assert.equal(human.knockedOut, true);
   });
 
-  it.skip('human wakes up when ogre apologizes', () => {
+  it('human wakes up when ogre apologizes', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
