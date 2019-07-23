@@ -111,13 +111,13 @@ describe('Sphinx', () => {
     assert.equal(response, 'That wasn\'t that hard, I bet you don\'t get the next one');
   });
 
-  it.skip('should start having eaten no heroes', () => {
+  it('should start having eaten no heroes', () => {
     const sphinx = new Sphinx();
 
     assert.equal(sphinx.heroesEaten, 0);
   });
 
-  it.skip('should eat the hero if their answer isn\'t correct for any riddles', () => {
+  it('should eat the hero if their answer isn\'t correct for any riddles', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?', 
@@ -141,7 +141,7 @@ describe('Sphinx', () => {
     assert.equal(sphinx.heroesEaten, 1);
   });
 
-  it.skip('should scream with rage if a hero gets all riddles correct', () => {
+  it('should scream with rage if a hero gets all riddles correct', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?', 
